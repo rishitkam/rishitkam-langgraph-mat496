@@ -53,4 +53,9 @@ Tweakings : I added and defined my own set of tools and binded them with the llm
 
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/router.ipynb
 
-My code : 
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%201/router.ipynb
+
+
+Video 6 : 
+
+Learnings : 

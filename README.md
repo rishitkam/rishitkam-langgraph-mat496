@@ -71,5 +71,9 @@ Video 7 :
 
 Learnings : By default the state is transient for single graph execution, this means there is no memory bw two different runs, I learnt that LangChain solves this by using check pointers to save the graph state after each step.  One of the easiest check pointers to use as memory saver is an in-memory key value store, and all we have to do to use it is to import it and then compile our graph with it, and our graph has memory just like that. The check pointer basically stores the state of the graph at every checkpoint and these check pointers can be associated together in a thread, so we need to add a thread id to our graph to store together all the checkpoints and thus giving our graph a memory, we can pass this thread to our graph for all future invocations to keep them all connected , also one interesting thing is we don't need to make any changes to the agent.py studio file to add memory to it because it is already taken care of by LangGraph Studio itself, so we dont need to add anything extra and we can directly compile our graph in LangGraph studio to check how its working with a memory.
 
+Tweakings : 
+
+
+
 
 

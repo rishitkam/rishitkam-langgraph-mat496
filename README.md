@@ -60,4 +60,11 @@ Video 6 :
 
 Learnings : In the previous video we built a simple router which decided to make a tool call or return a natural language response, We can make a very simple modification to our router to turn it into a generic more popular agent architechture, called ReAct . We take our router from the previous video and if it calls a tool we take that tool call and send  the output of tools node back into the model forming a loop. ReAct has 3 major components , 1. the 'Act' part like for example here the conditional edge calls the tools, 2. second is 'Observe', for example here the edge which passes the output from tool back to the model and 3. the third component is 'Reason', for ex here when the model again decides what to do next . We can add some conditions to end this loop like for example a max recursion limit, and so on. In summary with just a very little modification, i.e just by adding an extra edge from tools to the assistant we have our ReAct agent ready. We can also trace this agent's graph and see all the under the hood workings under the project traces in langsmith portal.
 
+Tweakings :  I added my own extra tools including factorial and subtract, and binded all the tools to the llm, I also had to add these tools separately to the agent.py file so that i can efficiently see the graph's representation on the LangGraph studio, I made a custom prompt for the llm, I created a graph with all the tools and also added an extra edge from tools to assisstant (as also done in the video), I tested and analysed multiple new examples of my own on this graph, I even took an example which incorporated all the tools together in one go which was interesting to see, I also analyzed multiple runs using the LangSmith studio and observed the flow and I could clearly see that there was a repeating loop bw the assisstant and the tool node,I also added screenshots of the things I learnt and observed on the LangSmith studio and the LangSmith project traces, along with annotations and comments to explain them properly.
+
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/agent.ipynb
+
+My code : 
+
+
 

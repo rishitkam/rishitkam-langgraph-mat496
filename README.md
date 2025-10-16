@@ -24,8 +24,8 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 3 :
 
-Learnings : In this video I learned about LangSmith studio (previously langgraph studio) which provides us a  really nice way to visualize whats happening in our graphs and also helps us to track the various runs of our graph through threads, it also gives us the option to do advanced debugging. Basically it is a place where we can play around with graphs. It can also integrate with LangSmith, which basically lets us watch everything our graph is doing and we can test our prompts and optimize the runs to make them better that too all in realtime. It is a very powerful tools to use for graphs. Also in this course, every module has a built in studio folder which enables us to run this langsmith studio in our browser.
+Learnings : In this video I learned about LangSmith studio (previously langgraph studio) which provides us a  really nice way to visualize whats happening in our graphs and also helps us to track the various runs of our graph through threads, We can also highlight and see what each individual thread is doing. It also gives us the option to do advanced debugging. Basically it is a place where we can play around with graphs. It can also integrate with LangSmith, which lets us watch everything our graph is doing and we can test our prompts and optimize the runs to make them better that too all in realtime. It is a very powerful tools to use for graphs. Also in this course, every module has a built in studio folder which enables us to run this langsmith studio in our browser easily
 
 Tweakings : Since there was no jupyter notebook for this video, I have made my own jupyter notebook which showcases the LangGraph/LangSmith studio and also demonstrates how I followed the steps given in the video to open the langGraph studio in my browser. I have added screenshots and annotations in that notebook for a better understanding and explanation
 
-My code : 
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%201/langsmith_studio.ipynb

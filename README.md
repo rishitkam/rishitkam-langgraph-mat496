@@ -42,3 +42,9 @@ Tweakings : I added my custom list of messages which I then passed on to the LLM
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/chain.ipynb
 
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%201/chain.ipynb
+
+
+
+Video 5 :
+
+Learnings :

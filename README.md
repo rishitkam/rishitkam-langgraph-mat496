@@ -19,3 +19,9 @@ Tweakings : Made my own simple/basic graph which can distinguish and identify ev
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/simple-graph.ipynb
 
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%201/simple_graph.ipynb
+
+
+
+Video 3 :
+
+Learnings : 

@@ -24,4 +24,4 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 3 :
 
-Learnings : 
+Learnings : In this video I learned about LangSmith studio (previously langgraph studio) which provides us a  really nice way to visualize whats happening in our graphs and also helps us to track the various runs of our graph through threads, it also gives us the option to do advanced debugging. Basically it is a place where we can play around with graphs. It can also integrate with LangSmith, which basically lets us watch everything our graph is doing and we can test our prompts and optimize the runs to make them better that too all in realtime. It is a very powerful tools to use for graphs. Also in this course, every module has a built in studio folder which enables us to run this langsmith studio in our browser.

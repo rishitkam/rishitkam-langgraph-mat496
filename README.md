@@ -66,7 +66,10 @@ Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module
 
 My Code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%201/agent.ipynb
 
-My code : 
+
+Video 7 : 
+
+Learnings : 
 
 
 

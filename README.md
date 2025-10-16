@@ -49,4 +49,8 @@ Video 5 :
 
 Learnings : In this video we took on from the previous video directly, we know that our graph has two choices, to either use the tools or use its default natural language response based on the input,  I learnt that this can be thought of as a simple router. We learnt how to use our graph to make a simple router like the one I mentioned , which will decide whether to call a tool node or not based on our input, we can do this by adding a conditional edge in the graph, we then also saw the implementation and representation of this graph on the langsmith studio and played around with it by giving it different inputs in multiple runs and saw how its actually working on different inputs (like the one which requires tools and the one which doesnt) and saw how it called the tool edge based on this condition. It was a very nice and easy to understand representation.
 
-Tweakings : 
+Tweakings : I added and defined my own set of tools and binded them with the llm once again in the src code as well as in the Router.py file which we need for running the LangSmith studio representation as in the previous example,I Set up a new graph and I also set up a new condtional node to which I binded these tools using the ToolNode function, I then tested out this graph with multiple prompts and even used a prompt with two different tools, then I saw the graph's implementation on the LangSmith studio and gave it different inputs, I noted the observations and also added screenshots with annotations to better explain them.
+
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/router.ipynb
+
+My code : 

@@ -74,7 +74,9 @@ Learnings : By default the state is transient for single graph execution, this m
 Tweakings : I borrowed the code from my previous video which had the extra tools which I added (inlcluding factorial and subtract), which were all binded to the llm, I then defined a custom prompt again and created a Graph with the tool node in a loop with the assisstant node, just like before. I defined a check pointer and added it to the graph to retain the state of the graph (memory) at that point , and I joined all the check pointers together using a single thread ID which I created. I then ran some complex multi run examples and the graph was able to handle them neatly as it now had a memory, linked with a thread id. I then created a separate new thread ID and ran some examples on that as well, the graph handled that neatly too.  I also explored and observed this Graph in the LangGraph studio and attached the screenshot from the studio in the jupyter notebook, I also added Markdown comments of my own throughout the notebook and tried to explain what each cell was doing.
 
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/agent-memory.ipynb
-My code : 
+
+
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%201/agent-memory.ipynb
 
 
 

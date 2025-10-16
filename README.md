@@ -37,4 +37,8 @@ Video 4 :
 Learnings : In this video I learnt how to make chains in a graph. A chain has 4 major components which include  chat messages, chat models, binding tools and tool calls, 
 I also learnt how the messages list can be directly passed to chat models to get a response. We learnt about tools, which are additional  functions which can be binded with llms, the llm can then use these tools to perform specific tasks, we can even give an llm a natural language command and it can directly produce the payload to run the corresponding tools for it. furthermore the video discussed how we can use messages as graph state, we have also used the reducer function which enables us to append to the messages list with each run rather than overwriting it so it helps us to preserve all the previous messages and add our new ones as well.
 
-Tweakings : 
+Tweakings : I added my custom list of messages which I then passed on to the LLM, I added my own set of tools which included tools like factorial of a number, addition, subtraction, division etc. of two numbers, I then put all these tools in a single list and binded them with my LLM. I then demonstrated the different tools by giving my LLM natural language commands which it automatically converted to payload for the tools, I printed the tool calls using the pretty_print() command. I also used the messages state which has built-in messages key and reducer function, I demonstraded how using the built in reducer add messages command appends to the messages instead of overwriting the previous data using my own example. In the end combining all this I created a simple graph chain and tested it with my own prompts.
+
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/chain.ipynb
+
+My code : 

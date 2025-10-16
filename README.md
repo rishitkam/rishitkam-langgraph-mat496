@@ -58,4 +58,6 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 6 : 
 
-Learnings : 
+Learnings : In the previous video we built a simple router which decided to make a tool call or return a natural language response, We can make a very simple modification to our router to turn it into a generic more popular agent architechture, called ReAct . We take our router from the previous video and if it calls a tool we take that tool call and send  the output of tools node back into the model forming a loop. ReAct has 3 major components , 1. the 'Act' part like for example here the conditional edge calls the tools, 2. second is 'Observe', for example here the edge which passes the output from tool back to the model and 3. the third component is 'Reason', for ex here when the model again decides what to do next . We can add some conditions to end this loop like for example a max recursion limit, and so on. In summary with just a very little modification, i.e just by adding an extra edge from tools to the assistant we have our ReAct agent ready. We can also trace this agent's graph and see all the under the hood workings under the project traces in langsmith portal.
+
+

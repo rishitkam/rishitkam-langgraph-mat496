@@ -47,4 +47,6 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 5 :
 
-Learnings :
+Learnings : In this video we took on from the previous video directly, we know that our graph has two choices, to either use the tools or use its default natural language response based on the input,  I learnt that this can be thought of as a simple router. We learnt how to use our graph to make a simple router like the one I mentioned , which will decide whether to call a tool node or not based on our input, we can do this by adding a conditional edge in the graph, we then also saw the implementation and representation of this graph on the langsmith studio and played around with it by giving it different inputs in multiple runs and saw how its actually working on different inputs (like the one which requires tools and the one which doesnt) and saw how it called the tool edge based on this condition. It was a very nice and easy to understand representation.
+
+Tweakings : 

@@ -71,7 +71,10 @@ Video 7 :
 
 Learnings : By default the state is transient for single graph execution, this means there is no memory bw two different runs, I learnt that LangChain solves this by using check pointers to save the graph state after each step.  One of the easiest check pointers to use as memory saver is an in-memory key value store, and all we have to do to use it is to import it and then compile our graph with it, and our graph has memory just like that. The check pointer basically stores the state of the graph at every checkpoint and these check pointers can be associated together in a thread, so we need to add a thread id to our graph to store together all the checkpoints and thus giving our graph a memory, we can pass this thread to our graph for all future invocations to keep them all connected , also one interesting thing is we don't need to make any changes to the agent.py studio file to add memory to it because it is already taken care of by LangGraph Studio itself, so we dont need to add anything extra and we can directly compile our graph in LangGraph studio to check how its working with a memory.
 
-Tweakings : 
+Tweakings : I borrowed the code from my previous video which had the extra tools which I added (inlcluding factorial and subtract), which were all binded to the llm, I then defined a custom prompt again and created a Graph with the tool node in a loop with the assisstant node, just like before. I defined a check pointer and added it to the graph to retain the state of the graph (memory) at that point , and I joined all the check pointers together using a single thread ID which I created. I then ran some complex multi run examples and the graph was able to handle them neatly as it now had a memory, linked with a thread id. I then created a separate new thread ID and ran some examples on that as well, the graph handled that neatly too.  I also explored and observed this Graph in the LangGraph studio and attached the screenshot from the studio in the jupyter notebook, I also added Markdown comments of my own throughout the notebook and tried to explain what each cell was doing.
+
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-1/agent-memory.ipynb
+My code : 
 
 
 

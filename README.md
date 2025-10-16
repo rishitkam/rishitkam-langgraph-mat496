@@ -29,3 +29,12 @@ Learnings : In this video I learned about LangSmith studio (previously langgraph
 Tweakings : Since there was no jupyter notebook for this video, I have made my own jupyter notebook which showcases the LangGraph/LangSmith studio and also demonstrates how I followed the steps given in the video to open the langGraph studio in my browser. I have added screenshots and annotations in that notebook for a better understanding and explanation
 
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%201/langsmith_studio.ipynb
+
+
+
+Video 4 :
+
+Learnings : In this video I learnt how to make chains in a graph. A chain has 4 major components which include  chat messages, chat models, binding tools and tool calls, 
+I also learnt how the messages list can be directly passed to chat models to get a response. We learnt about tools, which are additional  functions which can be binded with llms, the llm can then use these tools to perform specific tasks, we can even give an llm a natural language command and it can directly produce the payload to run the corresponding tools for it. furthermore the video discussed how we can use messages as graph state, we have also used the reducer function which enables us to append to the messages list with each run rather than overwriting it so it helps us to preserve all the previous messages and add our new ones as well.
+
+Tweakings : 

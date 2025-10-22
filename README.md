@@ -88,10 +88,10 @@ Video 1 :
 Learnings : When we define a langGraph state graph, we specify schema, The schema is basically the structure and the types of data the graph will use , till now we have mostly used TypeDict which is quite convenient for general use, but its not the only way to establish schema for LangGraph, There are other ways to establish schema like the DataClasses in Python are a way to define structured data and they offer a concise and nice syntax for creating data classes. There is a problem with both TypeDict and DataClasses its that they are not actually enforced at runTime, so we could potentially assign an invalid value without raising an error, PyDantic provides a solution for this issue as it provides data Validation. PyDantic is a very good choice if we wanna apply validation to any of the keys in our state. So in summary, In this video I got to know about three different ways to define schema for our graph which are TypeDict, DataClasses and PyDantic.
 
 
-Tweakings : 
+Tweakings : I made a simple Graph which enables the user to choose between coffee or tea, using the three different state schemas which I learnt in the video, which are : Pydantic (with automatic input validation), TypedDict, and dataclasses (without automatic input validation), I then tested the graphs made using each type of schema with different inputs (valid and invalid) and except for Pydantic the other two schemas didnt throw any errors even with invalid inputs. This was the expected behaviour which I had also learnt through the tutorial video.
 
 
-Source Code : 
+Source Code : https://github.com/langchain-ai/langchain-academy/blob/main/module-2/state-schema.ipynb
 
 
 My code : 

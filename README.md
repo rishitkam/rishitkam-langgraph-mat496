@@ -89,12 +89,18 @@ Learnings : When we define a langGraph state graph, we specify schema, The schem
 
 
 Tweakings : I made a simple Graph which enables the user to choose between coffee or tea, using the three different state schemas which I learnt in the video, which are : Pydantic (with automatic input validation), TypedDict, and dataclasses (without automatic input validation), I then tested the graphs made using each type of schema with different inputs (valid and invalid) and except for Pydantic the other two schemas didnt throw any errors even with invalid inputs. This was the expected behaviour which I had also learnt through the tutorial video.
+I also added markdowns in the notebook at all places to explain the contents more thoroughly.
 
 
 Source Code : https://github.com/langchain-ai/langchain-academy/blob/main/module-2/state-schema.ipynb
 
 
-My code : 
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%202/state-schema.ipynb
+
+
+Video 2 : 
+
+Learnings : 
 
 
 

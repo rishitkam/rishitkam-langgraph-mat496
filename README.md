@@ -137,7 +137,9 @@ Learnings : In this video i learned how we can use LLMs to get a realtime summar
 
 Tweakings : I modified the code to create my own chatbot, which invokes the summary generator function once the number of messages crosses 4, it uses the in-built MemorySaver along with checkpoints and threadIDs to maintain a memory in the chatbot, and as soon as the summary generator is invoked it deletes all the previous messages and keeps only the two most recent messages and passes the summary as input for the next prompts, I also did a step-by-step analysis of this working process of the chatbot using langsmith tracing and i have put the screenshots along with captions in the jupyter notebook to further explain the behind the scene working of this chatbot with the help of langsmith tracing. Also we can easily define new conversations by adding a new thread id, and the memory of that thread id will persist.I added two conversations, one about this MAT496 course and one about the 24 hr daytona race and the chatbot worked perfectly and as expected in both examples, furthermore Doing this summarization helped us to save time and resources and also increased the efficeincy of our conversations. 
 
-SOurce code : https://github.com/langchain-ai/langchain-academy/blob/main/module-2/chatbot-summarization.ipynb
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-2/chatbot-summarization.ipynb
+
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%202/chatbot-summarization.ipynb
 
 
 

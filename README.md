@@ -142,6 +142,11 @@ Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%202/chatbot-summarization.ipynb
 
 
+Video 6 : 
+
+Learnings : 
+
+
 
 
 

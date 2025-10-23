@@ -124,6 +124,12 @@ Video 4 :
 
 Learnings : In this video I learned that it is difficult to manage long running conversations with an agent using messages, as it can be very token intensive, also long-running conversations result in high latency if we are not careful this is because we pass a growing list of messages to the model. to tackle this the most common approach is, we can choose to only keep recent messages and delete all the other ones before them.  We can do this using the inbuilt functions in the message reducer, namely the remove and add messages functions .If we dont want to modify the graph state There's is also an option to filter the messages which we pass to the llm without altering the graph state, for example we could set a filter to only send the last message to our llm and so on. Apart from these approaches theres another one which is Trimming based upon a set number of tokens,This restricts the message history to a specified number of tokens. trimming also restricts the number of tokens that a chat model can use to respond unlike filtering, there's also an option to allow partial messages or not allow them , whenever we trim based on the token limit. All these methods help us to manage the problems which we would otherwise face with long-running conversations and increase the efficiency of our conversations.
 
+Tweakings : I utilised all three methods shown to us in the video tutorial, I first made a graph which modifies the graph state to only keep the 3 most recent messages and delete the rest of them using in-built functions and tested it with various examples of my own, I then setup a filter which passes only the recent 2 messages to the model but preserves the whole message history and I also demonstrated it's working by showing how it only passed the last two messages as inputs (by using traces) but it still printed the whole message history, then I made a graph which automatically trims inputs greater than 250 tokens and tested it with an exmaple
+
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-2/trim-filter-messages.ipynb
+
+My code : 
+
 
 
 

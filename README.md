@@ -133,6 +133,11 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 5 :
 
+Learnings : In this video i learned how we can use LLMs to get a realtime summary of our conversation instead of just trimming or filterting messages, its a more efficient means of compression that preserves information better than just normally filtering or trimming old messages , we can do this by adding a new key called summary to our messagesState and also by adding memory to our graph. For adding memory we can use persistence with the help of checkpointers. so bascially what happens here is we can ask questions to the chatbot  and it creates a message history overtime and if that message history is longer than six messages it will create a summary and append that to our input  messages and delete the old messages, the running summary lives in state and we use a checkpointer to persist that state through time so we can keep having conversation with this assisstant overtime. So two factors are at play 1.) we use the checkpointer to maintain that state overtime and 2.) we are gonna produce this running summary so this conversation within state never gets very long. 
+
+Tweakings : 
+
+
 
 
 

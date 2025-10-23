@@ -111,7 +111,13 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 3 : 
 
-Learnings : 
+Learnings : Typically all graph nodes have a single schema, and it contains all the graphs input and output keys or channels, but sometimes we require more control over this process, for this we have many options such as PrivateState and separate input/output schemas. PrivateState is used when we have smthing needed as part of the intermediate working logic of the graph, but not for the overall graph input or output. We also have the option to define separate,specific input and output states, such that only the output state is visible to the user as the result, we use this when we want explicit input and output schemas, generally for this we use an internal schema that contains all keys relevant for graph operations along with specific input and output schemas to constrain the inputs and outputs of the graph. Both of these examples are types of multiple schemas used in graphs. So, in conclusion, In this tutorial I learnt about a few ways to customise graphs with multiple schemas.
+
+Tweakings : 
+
+Source code : 
+
+My code : 
 
 
 

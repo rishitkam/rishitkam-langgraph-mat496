@@ -102,7 +102,9 @@ Video 2 :
 
 Learnings : when we define a schema and we make updates, by default it is going to overwrite the prior value in that particular state key or channel. This works fine if there is no branching of the nodes, but if the nodes are branched then, we get an error saying "key can only recieve one value per step", This is because all the nodes at that step attempt to overwrite the key, and its ambiguous for the graph as in which state it should keep. Reducers gives us a general way to address this and other problems, they allow us to specify how to perform state updates, they basically tell the key how to handle updates, thus removing the ambiguit. We can also define our own customReducers to handle some specific cases which we want . The messages state which we learnt about in the previous module also has a built in reducer. In langGraph whenever we use messages each message is appended with an ID, it has many usecases, for example if we supply the id of a message and pass it to the add message reducers it would simply overwrite the value of the existing message with the same id, the reducer also enables message removal by the 'RemoveMessage' function, it is a very nice function for culling and managing the message history 
 
-Tweakings :
+Tweakings : First I defined a reducer of my own with the operator add function similar to what was shown in the tutorial, after that i defined a custom reducer which only keeps the largest number and ran different testcases on it, after that i experimented with the in-built message reducer and tried out the various functions which were shown to us in the video tutorial, i also added markdowns in the jupyter notebook to explain things better 
+
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-2/state-reducers.ipynb
 
 
 

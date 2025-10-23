@@ -150,6 +150,8 @@ Tweakings : I continued where i left off from the previous video, and added an e
 
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-2/chatbot-external-memory.ipynb
 
+my code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%202/external-memory.ipynb
+
 
 
 

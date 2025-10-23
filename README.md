@@ -144,7 +144,9 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 6 : 
 
-Learnings : 
+Learnings : In the previous video we used an in memory checkpointer along with a summariser to have feasible long running conversations, but the problem wiht in-memory checkpointer is that it would only allow  our memory to persist as long as that notebook is in session, Its lifetime is linked to that of our notebook. If we want our memory to stay indefinitely,  Langgraph supports a few checkpointers that work with external databses like SQLite or PostGres. SQLite is a small, fast and popular database and its a very good starting point for working with external database checkpointers, even if we restart the kernel of in our notebook the history with externa databses will still be there. LangGraph studio has its own built in persistence layer which we can utilise across different sessions. the .py file in the directory gets packaged by the api and automatically a persistence layer (PostGres) gets added that is used in LangGraph studio. In langgraph studio we can see everything working in real time, and we also get a unique thread id associated with that conversation. we can manage all our threads very gracefully with the langgraph studio. 
+
+Tweakings : 
 
 
 

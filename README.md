@@ -155,6 +155,16 @@ my code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 
 
+Module 3 :
+
+Video 1 :
+
+Learnings : In this video  i learnt about streaming which is something we would require if we want to add a human into the loop which builds on memory and allows the users to interact with graphs/agents in different ways, to our chatbot from the previous module (module 2) . There are two different ways for streaming .stream and .astream which are sync and async methods for streaming back results, I also learnt about two different methods to stream the states one is update, where we just stream the updates to state after each node is called, the other is values, where we stream the full state after each node is called. I also learnt how to stream the LLM tokens as they are generated with chat model calls. We can do this  by using the .astream_events method which streams back events as they happen inside nodes. Each event is in the form of a dict with few keys ,we can choose to print out details related to a specific key, and we can also choose particular nodes to stream from. I also saw how we can take a look at streaming with the LangGraph API. I learnt that theres a streaming mode in langgraph for messages specifically, that is only supported in the lanngraph API, this mode assumes that we have a messages key in our state, the  emitted events have two attributes, 'event' and 'data'. Using this mode we can stream output from the chat models which contains both tool calls and natural language responses, which is quite useful.
+
+
+
+
+
 
 
 

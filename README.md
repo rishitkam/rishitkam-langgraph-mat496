@@ -181,6 +181,12 @@ Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%203/breakpoints-ex.ipynb
 
 
+Video 3 : 
+
+Learnings : In this video I learnt that breakpoints also allow us to actually change/manipulate the graph state as we want, we can simply do this by adding an interrupt before calling the assisstant and then changing our input using the options given to us in the inbuilt 'messages' state option in langgraph, we can choose to append our modificiation to the previous msg or overwrite it, we can overwrite it simply by providing the msg id. We can also update the graph state using the langgraph api. We also have the ability to make the changes to state directly by the human user, One very useful application of this is that we can design our chatbot to await user input before carrying out any tasks, we can easily do this by first adding a psuedo/dummy node and then an interrupt before the human message input node .
+
+Tweakings : 
+
 
 
 

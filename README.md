@@ -200,7 +200,7 @@ Tweakings : I created a simple graph with 4 nodes and added a node interrupt at 
 
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-3/dynamic-breakpoints.ipynb
 
-My code : 
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%203/dynamic-breakpoints-ex.ipynb
 
 
 

@@ -194,7 +194,13 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 4 : 
 
-Learnings : IIn this video I learnt that we can actually get our graph to interrupt itself internally, without external commands. This can be done using node interrupt, which we can add conditionally in a node and set it to interrupt the node only for specific conditions and whenever those conditions are met, it interrupts our graph, This is known as internal or dynamic breakpoint and is very useful we can throw it in the graph conditionally, and the interrupt will persist and our state cannot change unless the condition is met by changing the state , I also learnt how to properly implement dynamic breakpoints using the LangGraph api, and understood its in-depth working through the Langsmith studio.
+Learnings : In this video I learnt that we can actually get our graph to interrupt itself internally, without external commands. This can be done using node interrupt, which we can add conditionally in a node and set it to interrupt the node only for specific conditions and whenever those conditions are met, it interrupts our graph, This is known as internal or dynamic breakpoint and is very useful we can throw it in the graph conditionally, and the interrupt will persist and our state cannot change unless the condition is met by changing the state , I also learnt how to properly implement dynamic breakpoints using the LangGraph api, and understood its in-depth working through the Langsmith studio.
+
+Tweakings : I created a simple graph with 4 nodes and added a node interrupt at the 3rd node, which interrupts if it detects a numeric character in the input, I then tested it with my inputs and first gave an interrupt inducing command which had a numeric digit in it and it behaved as expected and throwed an interrupt but when i changed the input it then executed gracefully, I also implemented this using LangGraph api and gave another suitable example to demonstrate its working, lastly I updated the .py file with my code to reflect the changes which i did onto the langraph studio, and then carefully analysed the graph's working and added screenshots along with captions to explain what i saw on the langgraph studio portal.
+
+Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-3/dynamic-breakpoints.ipynb
+
+My code : 
 
 
 

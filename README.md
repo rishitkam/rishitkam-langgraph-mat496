@@ -194,7 +194,7 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 Video 4 : 
 
-Learnings : I learnt that  breakpoints allow us to set particular nodes that the graph will stop at, but what if want the graph to interrupt itself , can be thought of as an internal breakpoint , this can be acheived using node interrupt , we can throw it in the graph conditionally, and the interrupt will persist and our state cannto change unless the condition is met by changing the state , I also learnt how to properly implement dynamic breakpoints using the LangGraph api, and understood its in-depth working through the Langsmith studio.
+Learnings : IIn this video I learnt that we can actually get our graph to interrupt itself internally, without external commands. This can be done using node interrupt, which we can add conditionally in a node and set it to interrupt the node only for specific conditions and whenever those conditions are met, it interrupts our graph, This is known as internal or dynamic breakpoint and is very useful we can throw it in the graph conditionally, and the interrupt will persist and our state cannot change unless the condition is met by changing the state , I also learnt how to properly implement dynamic breakpoints using the LangGraph api, and understood its in-depth working through the Langsmith studio.
 
 
 

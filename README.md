@@ -170,6 +170,12 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 
 
+Video 2 :
+
+Learnings : In this video first I learnt about applications of streaming including approval,debugging and modifying then I learnt about breakthroughs, which allow us to add human in the loop in a very interactive way, using breakthroughs we can stop our graph flow at any particular state and then we can add some conditional statements to manage the flow(whether it would go further or not), for example in this video we added a breakthrough before a tool call and then added a conditional statement with user input, if the user said yes only then would the tool call be executed , Then I learnnt about implementing breakthrough using the langgraph api, I also learnt that we can even pass the interrupt command to the stream method directly using the api, which is a very helpful and integrative feature.
+
+
+
 
 
 

@@ -192,6 +192,15 @@ Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%203/edit-state-human-feedback-ex.ipynb
 
 
+Video 4 : 
+
+Learnings : I learnt that  breakpoints allow us to set particular nodes that the graph will stop at, but what if want the graph to interrupt itself , can be thought of as an internal breakpoint , this can be acheived using node interrupt , we can throw it in the graph conditionally, and the interrupt will persist and our state cannto change unless the condition is met by changing the state , I also learnt how to properly implement dynamic breakpoints using the LangGraph api, and understood its in-depth working through the Langsmith studio.
+
+
+
+
+
+
 
 
 

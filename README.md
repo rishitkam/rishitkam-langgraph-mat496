@@ -203,6 +203,13 @@ Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%203/dynamic-breakpoints-ex.ipynb
 
 
+Video 5 : 
+
+Learnings : In this long video I learnt that langgraph supports debugging by veiwing, replaying and forking past states and all this is collectively called time travel. we can view the past states by creating an indexed array of states using graph.get_state_history in which the 0th element is the current state and all previous ones are in negative indexes, we can also rerun previous states. graph.stream is a useful feature which gives the current state when the input is none and if we provide a checkpoint id as input then it picks up from there and provides output according to that checkpoint id. Forking is another very useful feature which allows us to see the same step/state but with different inputs so we can explore all possible trajectories for that state ,when we run a forked node the graph knows that this has not been run yet but the metadata in that node which tells which nodes will be executed next still remains the same. the graph executes that forked node instead of replaying it. We can also view, replay and fork using langgraph api and all the procedures are mostly the same except some unique qualities, In langgraph api we just need to supply the checkpoint id to replay from a checkpoint which is very convienient, the same is with forking. I came to know through the tutorial video that Forking is extrememly helpful in complex graphs with many nodes where we can fork the state to explore alternative trajectories. I also understood how we can play around with forking in the langsmith studio website and look at all the cases very convieniently.
+
+
+
+
 
 
 

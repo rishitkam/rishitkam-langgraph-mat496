@@ -211,7 +211,7 @@ Tweakings : I defined a basic graph and added custom tools of my own which inclu
 
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-3/time-travel.ipynb
 
-My code : 
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%203/time-travel-ex.ipynb
 
 
 

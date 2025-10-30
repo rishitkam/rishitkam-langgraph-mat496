@@ -215,6 +215,18 @@ My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Modu
 
 
 
+Module 4 :
+
+
+Video 1 :
+
+Learnings : In this video I learnt about a LangGraph controllability feature known as parallelization which is basically when we run multiple nodes in a single step, if we normally try to run two nodes together in a step we will recieve an error saying that the state can only revieve one value per step, it makes sense because its ambiguous as the graph doesnt know which one to choose from bw those 2(or more) nodes and both of them try to update the state,basically the graph gets confused. If we actually want to run multiple nodes parallely and write to the same key, we need to use a reducer that can aggregate those updates, we need to define the state with a reducer that will handle and add the updates to it, So in short, we use reducers to handle those simultaneous updates which were causing the error mentioned earlier. I also learnt about parallelization with multiple nodes in a single step, the graph only moves onto the next step when all the nodes in the current step have been executed, we can also customise this order of execution using custom reducers . I also learnt how to implement parallelization using the langgraph api which was pretty similar to the method I have mentioned earlier in this paragraph.
+
+
+
+
+
+
 
 
 

@@ -226,7 +226,7 @@ Tweakings : Firstly I created a new example of a graph with 5 nodes and 3 nodes 
 
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-4/parallelization.ipynb
 
-My code :
+My code : http://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%204/parallelization-ex.ipynb
 
 
 

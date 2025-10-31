@@ -229,6 +229,14 @@ Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module
 My code : http://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%204/parallelization-ex.ipynb
 
 
+Video 2 :
+
+
+Learnings : In this video I learnt that subgraphs is an important controllability topic , it allows us to create and manage different states within different parts of the graph, this is really useful especially for multi agent systems, that have their own state. For subgraphs to exist there has to be a communication back and forth bw the parent and the sub graph, this communication is done by using overlapping keys. The output state of the graph contains all keys regardless of if they are unmodified or modified by the graph. I also learnt that  Parallel-running graphs return the same key so its very important that we either  use a reducer function or we can use an output state schema for each sub-graph and ensure that it contains different key to publish as output. One big advanatage of sub-graphs is that they give us a much nicer and more organised look in the LangSmith traces and make them much more readable than they would have been otherwise, this is extremely helpful for large, complex graphs.
+
+
+
+
 
 
 

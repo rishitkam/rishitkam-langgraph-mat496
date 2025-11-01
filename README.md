@@ -262,6 +262,6 @@ Tweakings :  I changed the output schemas and made it such that the analyst's ag
 
 Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module-4/research-assistant.ipynb
 
-My code : 
+My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%204/research-assistant-ex.ipynb
 
 

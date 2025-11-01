@@ -253,4 +253,11 @@ Source code : https://github.com/langchain-ai/langchain-academy/blob/main/module
 My code : https://github.com/rishitkam/rishitkam-langgraph-mat496/blob/main/Module%204/map-reduce-ex.ipynb
 
 
+Video 4 : 
+
+Learnings : in this module we basically brought together everything that we studied  in this module and the previous modules including memory, human in the loop, controllability, sub graphs and map reduce,  and made a multi agent research system using llms to help with the hard parts of research and return reports in a specfic and easy to read manner. I leanred how we can make analyst personas who are gonna research for us and how we can add output schemas to keep their output structured as we want it, then I learned how to add a human in the loop node after calling the analsysts to customise the analysts personas according to our needs, then i learnt how to use an llm to create questions to ask to those personas to get useful information out , we then added another sub graph to generate the answers using tavily and web search and another function named wikipedia search which we ran in parallel, I then saw how we can add all our outputs to the context and use a reducer when defineing the context key to append all the answers we add in the context from all the sources. I also observed how we  parallelized the interviews to save time and run them together as running them linearly would have almost tripled the time it took to execute them. Then in the end we bring everything together in a single nicely formatted answer. i I also learned how we can do a deep analysis of this graph on the langsmith portal which provides a very good step by step overview of what actually happens inside and we can also look it up on langgraph.
+
+
+Tweakings : 
+
 
